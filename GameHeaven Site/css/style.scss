@@ -1,0 +1,62 @@
+$primary: #0d0927;
+$secondary: #111433;
+$clear: #86acff;
+$font: #EEEEEE;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu, Arial;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $secondary;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $clear;
+    border-radius: 12px;
+}
+
+header {
+    z-index: 777;
+    position: fixed;
+    width: 100%;
+    background: $primary;
+    box-shadow: black;
+
+    h1 {
+        color: $font;
+    }
+
+    nav img{
+    padding: 6px;
+    height: 60px;
+    }
+    ul {
+        float: right;
+        padding-top: 26px;
+        padding-bottom: 22px;
+        padding-right: 55px;
+    }
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+    a {
+        padding-inline: 7px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: $font;
+        &:hover {
+            color: $clear;
+            transition: 200ms;
+        }
+    }
+    }
+    body {
+        background-color: $secondary;
+    }
+    #Jogos {
+        color: $font;
+    }
