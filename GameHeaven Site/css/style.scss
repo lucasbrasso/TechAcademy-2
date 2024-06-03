@@ -1,6 +1,6 @@
-$primary: #0d0927;
-$secondary: #111433;
-$clear: #86acff;
+$primary: #090e27;
+$secondary: #111933;
+$clear: #86bcff;
 $font: #EEEEEE;
 
 * {
@@ -22,7 +22,7 @@ header {
     z-index: 777;
     position: fixed;
     width: 100%;
-    background: $primary;
+    background: $secondary;
     box-shadow: black;
 
     h1 {
@@ -55,22 +55,25 @@ header {
     }
     }
     .slider-wrapper {
+        margin: 0 auto;
+        padding-top: 90px;
         position: relative;
-        max-width: 48rem;
-        border-radius: 20px;
+        max-width: 72rem;
     }
     .slider {
         display: flex;
         aspect-ratio: 16 / 9;
-        overflow-x: auto;
+        overflow-x: hidden;
         scroll-snap-type: mandatory;
         scroll-behavior: smooth;
+        border-radius: 14px;
         img {
+            border-radius: 14px;
             flex: 1 0 100%;
             scroll-snap-align: start;
             object-fit: cover;
         }
-
+        
     }
     .slider-nav {
         z-index: 1;
@@ -92,6 +95,11 @@ header {
             }
         }
     }
+
+    .grid {
+        display: grid;
+    }
+
     body {
-        background-color: $secondary;
+        background-color: $primary;
     }

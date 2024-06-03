@@ -5,11 +5,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #111433;
+  background-color: #111933;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #86acff;
+  background-color: #86bcff;
   border-radius: 12px;
 }
 
@@ -17,7 +17,7 @@ header {
   z-index: 777;
   position: fixed;
   width: 100%;
-  background: #0d0927;
+  background: #111933;
   box-shadow: black;
 }
 header h1 {
@@ -44,24 +44,27 @@ header a {
   color: #EEEEEE;
 }
 header a:hover {
-  color: #86acff;
+  color: #86bcff;
   transition: 200ms;
 }
 
 .slider-wrapper {
+  margin: 0 auto;
+  padding-top: 90px;
   position: relative;
-  max-width: 48rem;
-  border-radius: 20px;
+  max-width: 72rem;
 }
 
 .slider {
   display: flex;
   aspect-ratio: 16 / 9;
-  overflow-x: auto;
+  overflow-x: hidden;
   scroll-snap-type: mandatory;
   scroll-behavior: smooth;
+  border-radius: 14px;
 }
 .slider img {
+  border-radius: 14px;
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
@@ -88,8 +91,12 @@ header a:hover {
   opacity: 1;
 }
 
+.grid {
+  display: grid;
+}
+
 body {
-  background-color: #111433;
+  background-color: #090e27;
 }
 
 /*# sourceMappingURL=style.css.map */
