@@ -1,119 +1,31 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Ubuntu, Arial;
+  font-family: Ubuntu, Tahoma, Arial;
 }
 
-::-webkit-scrollbar-track {
-  background-color: #111933;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #86bcff;
-  border-radius: 12px;
-}
-
-header {
-  z-index: 777;
-  position: fixed;
-  width: 100%;
+.navbar {
   background: #111933;
 }
-header h1 {
+.navbar .navbar-brand {
+  color: #EEEEEE;
+  font-weight: bold;
+}
+.navbar .nav-item {
+  color: #EEEEEE;
+  font-weight: bold;
+}
+.navbar .nav-item .nav-link {
   color: #EEEEEE;
 }
-header nav img {
-  padding: 6px;
-  height: 60px;
-}
-header ul {
-  float: right;
-  padding-top: 26px;
-  padding-bottom: 22px;
-  padding-right: 55px;
-}
-header li {
-  list-style: none;
-  display: inline-block;
-}
-header a {
-  padding-inline: 7px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #EEEEEE;
-}
-header a:hover {
+.navbar .nav-item .nav-link:hover {
   color: #86bcff;
   transition: 200ms;
 }
 
-.slider-wrapper {
-  margin: 0 auto;
-  padding-top: 90px;
-  position: relative;
-  max-width: 86rem;
-}
-
-.slider {
-  display: flex;
-  aspect-ratio: 16 / 9;
-  overflow-x: hidden;
-  scroll-snap-type: mandatory;
-  scroll-behavior: smooth;
-  box-shadow: #000 0 0 100px 50px;
-  border-radius: 14px;
-}
-.slider img {
-  border-radius: 14px;
-  flex: 1 0 100%;
-  scroll-snap-align: start;
-  object-fit: cover;
-}
-
-.slider-nav {
-  z-index: 1;
-  display: flex;
-  column-gap: 2rem;
-  position: absolute;
-  bottom: 1.25rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.slider-nav a {
-  width: 0.8rem;
-  height: 0.8rem;
-  border-radius: 100%;
-  background-color: #ffffff;
-  opacity: 0.65;
-  transition: opaciy ease 250ms;
-}
-.slider-nav a:hover {
-  opacity: 1;
-}
-
-.grid {
-  display: grid;
-}
-
-body {
-  background-color: #090e27;
-}
-
-footer {
-  position: fixed;
-  bottom: 0%;
-  text-align: center;
-  width: 100%;
-  background: #111933;
-}
-footer h3 {
+.navbar-toggler {
   color: #EEEEEE;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.teste {
-  color: #EEEEEE;
+  background-color: #86bcff;
 }
 
 /*# sourceMappingURL=style.css.map */

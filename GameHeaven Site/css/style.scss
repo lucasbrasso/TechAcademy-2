@@ -6,117 +6,29 @@ $font: #EEEEEE;
 * {
     margin: 0;
     padding: 0;
-    font-family: Ubuntu, Arial;
+    font-family: Ubuntu, Tahoma, Arial;
 }
 
-::-webkit-scrollbar-track {
-    background-color: $secondary;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: $clear;
-    border-radius: 12px;
-}
-
-header {
-    z-index: 777;
-    position: fixed;
-    width: 100%;
+.navbar {
     background: $secondary;
-
-    h1 {
+    .navbar-brand {
         color: $font;
+        font-weight: bold;
     }
-
-    nav img{
-    padding: 6px;
-    height: 60px;
-    }
-    ul {
-        float: right;
-        padding-top: 26px;
-        padding-bottom: 22px;
-        padding-right: 55px;
-    }
-    li {
-        list-style: none;
-        display: inline-block;
-    }
-    a {
-        padding-inline: 7px;
-        letter-spacing: 1px;
-        text-decoration: none;
-        color: $font;
-        &:hover {
-            color: $clear;
-            transition: 200ms;
-        }
-    }
-    }
-    .slider-wrapper {
-        margin: 0 auto;
-        padding-top: 90px;
-        position: relative;
-        max-width: 86rem;
-    }
-    .slider {
-        display: flex;
-        aspect-ratio: 16 / 9;
-        overflow-x: hidden;
-        scroll-snap-type: mandatory;
-        scroll-behavior: smooth;
-        box-shadow: #000 0 0 100px 50px;
-        border-radius: 14px;
-        img {
-            border-radius: 14px;
-            flex: 1 0 100%;
-            scroll-snap-align: start;
-            object-fit: cover;
-        }
-        
-    }
-    .slider-nav {
-        z-index: 1;
-        display: flex;
-        column-gap: 2rem;
-        position: absolute;
-        bottom: 1.25rem;
-        left: 50%;
-        transform: translateX(-50%);
-        a{
-            width: 0.8rem;
-            height: 0.8rem;
-            border-radius: 100%;
-            background-color: #ffffff;
-            opacity: 0.65;
-            transition: opaciy ease 250ms;
-            &:hover {
-                opacity: 1;
-            }
-        }
-    }
-
-    .grid {
-        display: grid;
-    }
-
-    body {
-        background-color: $primary;
-    }
-
-    footer {
-        position: fixed;
-        bottom: 0%;
-        text-align: center;
-        width: 100%;
-        background: $secondary;
-        h3 {
+        .nav-item {
             color: $font;
-            font-size: 20px;
-            font-weight: 400;
+            font-weight: bold;
+            .nav-link {
+                color: $font;
+                    &:hover {
+                        color: $clear;
+                        transition: 200ms;
+                    }
+        }
         }
     }
-
-    .teste {
+    .navbar-toggler {
         color: $font;
+        background-color: $clear;
     }
+    
