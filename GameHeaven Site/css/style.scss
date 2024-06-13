@@ -18,7 +18,7 @@ $font: #EEEEEE;
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #5ea6e1;
+    background: #5ca1da;
     border-radius: 10px;
   }
   
@@ -81,14 +81,31 @@ $font: #EEEEEE;
     .navbar-toggler:focus{
       box-shadow: none;
     }
+
+    .dropdown-toggle [aria-expanded="true"]:after {
+        transform: rotate(180deg); 
+    }
+    .dropdown-toggle:after { 
+        transition: 0.4s; 
+    }
+
+    #carouselExampleCaptions {
+        margin-top: 140px;
+    }
+    .carousel-indicators [data-bs-target]{
+            height: 8px;
+            width: 48px;
+            margin-inline: 3px;
+    }
     .carousel-inner {
-        width: 80%;
+        width: 72%;
         margin: 0 auto;
-        border-radius: 10px;
+        border-radius: 6px;
+        
     }
 
     .carousel-item img {
-        border-radius: 10px;
+        border-radius: 6px;
     }
 
     body {
