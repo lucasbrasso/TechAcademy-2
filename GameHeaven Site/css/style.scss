@@ -9,9 +9,34 @@ $font: #EEEEEE;
     font-family: Ubuntu, Tahoma, Arial;
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: $primary;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #5ea6e1;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: $clear;
+  }
+
 .navbar {
     background: $secondary;
     box-shadow: black 0 0 4px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 77;
+    .container-fluid img {
+        margin-left: 8px;
+        margin-right: 4px;
+    }
     .navbar-brand {
         color: $font;
         font-family: Ubuntu;
@@ -32,7 +57,7 @@ $font: #EEEEEE;
         }
         }
         .dropdown-menu {
-            background: #141c39;
+            background: #141c48;
             border-radius: 0 0 5px 5px;
             .dropdown-item {
                 color: $font;
@@ -43,7 +68,7 @@ $font: #EEEEEE;
                 }
             }
             .dropdown-divider {
-                background: $secondary;
+                background: $clear;
             }
         }
     }
@@ -55,6 +80,15 @@ $font: #EEEEEE;
     }
     .navbar-toggler:focus{
       box-shadow: none;
+    }
+    .carousel-inner {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .carousel-item img {
+        border-radius: 10px;
     }
 
     body {
