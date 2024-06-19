@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Game Heaven</title>
   <link rel="shortcut icon" href="img/gameheaven.svg">
+  <meta name="description" content="Sua biblioteca de jogos gratuitos">
+  <meta name="keywords" content="games, jogos, lançamentos">
+  
+  <base href="http://localhost/TechAcademy-2/GameHeaven%20Site/">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +22,15 @@
 </head>
 
 <body>
+<?php
+        //buscar os dados da API de games
+        $url = "http://localhost/TechAcademy-2/GameHeaven%20Site/api/games.php";
+        //importar os dados da API
+        $dadosApi = file_get_contents($url);
+        //transformar de JSON para array ou objeto
+        $dadosJogos = json_decode($dadosApi);
+    ?>
+
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a href="home">
@@ -38,15 +51,12 @@
               Jogos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Crimson Curse</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Meowtopia</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Omega Collapse</a></li>
+            <?php
+                                foreach($dadosJogos as $dados) {
+                                    echo "<li><a class='dropdown-item' href='game/{$dados->id}'>{$dados->nome}</a>
+                                    </li>";
+                                }
+                            ?>
             </ul>
           </li>
           <li class="nav-item">
