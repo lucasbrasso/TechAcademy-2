@@ -1,5 +1,5 @@
-$primary: #090e27;
-$secondary: #111933;
+$primary: #121212;
+$secondary: #18181C;
 $clear: #6abcff;
 $font: #EEEEEE;
 
@@ -33,23 +33,39 @@ $font: #EEEEEE;
     position: fixed;
     top: 0;
     z-index: 77;
+    
     .container-fluid img {
-        margin-left: 8px;
-        margin-right: 4px;
+        margin-left: 9px;
+        margin-right: 9px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        transition: 300ms;
+        &:hover {
+            scale: 103%;
+            transition: 300ms;
+        }
     }
     .navbar-brand {
-        color: $font;
+        left: 0;
         font-family: Ubuntu;
         font-weight: bold;
-        font-size: 28px;
+        font-size: 34px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        color: #E4E4E4;
+        transition: 300ms;
+        &:hover {
+            letter-spacing: 1.8px;
+            transition: 300ms;
+        }
     }
         .nav-item {
             color: $font;
             font-weight: bold;
-            padding-inline: 8px;
             margin-right: 10px;
             .nav-link {
                 color: $font;
+                text-transform: uppercase;
                     &:hover {
                         color: $clear;
                         transition: 200ms;
@@ -57,8 +73,9 @@ $font: #EEEEEE;
         }
         }
         .dropdown-menu {
-            background: #141c48;
-            border-radius: 0 0 5px 5px;
+            background: $secondary;
+            border-radius: 0 0 10px 10px;
+            margin-top: 26px;
             .dropdown-item {
                 color: $font;
                 &:hover {
@@ -82,7 +99,7 @@ $font: #EEEEEE;
       box-shadow: none;
     }
 
-    .dropdown-toggle [aria-expanded="true"]:after {
+    .dropdown-toggle[aria-expanded="true"]:after {
         transform: rotate(180deg); 
     }
     .dropdown-toggle:after { 
@@ -91,22 +108,29 @@ $font: #EEEEEE;
 
     #carouselExampleCaptions {
         margin-top: 140px;
+        border-radius: 17px;
     }
     .carousel-indicators [data-bs-target]{
-            height: 8px;
+            height: 6px;
             width: 48px;
             margin-inline: 3px;
     }
     .carousel-inner {
-        width: 72%;
+        width: 64%;
         margin: 0 auto;
-        border-radius: 6px;
-        
     }
 
     .carousel-item img {
-        border-radius: 6px;
+        border-radius: 17px;
+        border: 2px solid $secondary;
     }
+
+    .carousel-caption {
+        left: 0;
+        text-align: left;
+        margin-left: 55px;
+        margin-bottom: 80px;
+    }    
 
     body {
         background: $primary;
