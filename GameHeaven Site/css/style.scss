@@ -2,6 +2,7 @@ $primary: #121212;
 $secondary: #18181C;
 $clear: #6abcff;
 $font: #EEEEEE;
+$btn: #059212;
 
 * {
     margin: 0;
@@ -148,8 +149,68 @@ $font: #EEEEEE;
         margin-bottom: 80px;
     }    
 
+    
+
+    .row {
+        margin: 0 auto;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .jogoBanner {
+        text-align: center;
+        color: $font;
+        margin: 14px;
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .jogoDetalhes {
+        ul {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        li {
+            padding: 8px;
+            display: inline-block;
+            list-style: none;
+        }
+        a {
+            text-shadow: 0px 0px 0px $font;
+            text-decoration: none;
+            padding: 13px;
+            font-weight: bold;
+            font-size: 25px;
+            border-radius: 13px;
+            background: $btn;
+            box-shadow: $btn 0 0 10px;
+            color: $font;
+            transition: 300ms;
+
+
+            &:hover {
+                text-shadow: 0px 0px 22px $font;
+                padding: 16px;
+                border-radius: 16px;
+                background: #06D001;
+                box-shadow: #06D001 0 0 16px;
+                transition: 300ms;
+
+
+            }
+            svg {
+            margin-bottom: 4px;
+            }
+        }
+    }
+
     body {
         background: $primary;
+        font-family: Ubuntu, Tahoma, Arial;
     }
 
     .erro {

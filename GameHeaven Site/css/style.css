@@ -147,8 +147,60 @@
   margin-bottom: 80px;
 }
 
+.row {
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.jogoBanner {
+  text-align: center;
+  color: #EEEEEE;
+  margin: 14px;
+}
+.jogoBanner p {
+  font-size: 30px;
+}
+
+.jogoDetalhes ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.jogoDetalhes li {
+  padding: 8px;
+  display: inline-block;
+  list-style: none;
+}
+.jogoDetalhes a {
+  text-shadow: 0px 0px 0px #EEEEEE;
+  text-decoration: none;
+  padding: 13px;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 13px;
+  background: #059212;
+  box-shadow: #059212 0 0 10px;
+  color: #EEEEEE;
+  transition: 300ms;
+}
+.jogoDetalhes a:hover {
+  text-shadow: 0px 0px 22px #EEEEEE;
+  padding: 16px;
+  border-radius: 16px;
+  background: #06D001;
+  box-shadow: #06D001 0 0 16px;
+  transition: 300ms;
+}
+.jogoDetalhes a svg {
+  margin-bottom: 4px;
+}
+
 body {
   background: #121212;
+  font-family: Ubuntu, Tahoma, Arial;
 }
 
 .erro img {
