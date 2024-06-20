@@ -62,8 +62,14 @@
 .navbar .nav-item .nav-link {
   color: #EEEEEE;
   text-transform: uppercase;
+  border-radius: 12px;
+  padding: 8px;
+  transition: 200ms;
 }
 .navbar .nav-item .nav-link:hover {
+  padding: 8px;
+  border-radius: 12px;
+  background: #EEEEEE;
   color: #6abcff;
   transition: 200ms;
 }
@@ -104,8 +110,17 @@
   transition: 0.4s;
 }
 
+.destaque {
+  margin-top: 105px;
+  padding-left: 50px;
+}
+.destaque h2 {
+  font-size: 28px;
+  color: #EEEEEE;
+}
+
 #carouselExampleCaptions {
-  margin-top: 140px;
+  margin-top: 10px;
   border-radius: 17px;
 }
 

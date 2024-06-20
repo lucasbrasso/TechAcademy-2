@@ -6,7 +6,9 @@ $dadosApi = file_get_contents($url);
 $dadosBanner = json_decode($dadosApi);
 
 ?>
-
+<div class="container destaque">
+  <h2>Descobrir</h2>
+  </div>
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2100">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -22,7 +24,7 @@ $dadosBanner = json_decode($dadosApi);
                 ?>
                 <div class="carousel-item active">
                     <a href="api/<?=$dados->id_game?>">
-                        <img src="<?=$dados->imagem?>" class="d-block w-100"           alt="<?=$dados->nome?>">
+                        <img src="<?=$dados->imagem?>" class="d-block w-100" alt="<?=$dados->nome?>">
                     </a>
                 </div>
                 <?php
@@ -51,4 +53,8 @@ $dadosBanner = json_decode($dadosApi);
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div>
+
+  <div class="row">
+    
   </div>

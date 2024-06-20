@@ -2,7 +2,7 @@
     header('Access-Control-Allow-Origin: *');
     header("Content-type: application/json; charset=utf-8");
 
-    $path = "http://localhost/TechAcademy-2/GameHeaven%20Site/api/";
+    $path = "http://localhost/TechAcademy-2/GameHeaven%20Site/img/";
 
     $games[0] = array("id"=>1, "nome"=>"Crimson Curse", "descricao"=>"<p></p>",
     "poster"=>"{$path}poster_sf6.jpg","banner"=>"{$path}sf6.jpg");

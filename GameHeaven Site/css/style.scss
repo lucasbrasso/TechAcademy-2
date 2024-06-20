@@ -66,7 +66,13 @@ $font: #EEEEEE;
             .nav-link {
                 color: $font;
                 text-transform: uppercase;
+                border-radius: 12px;
+                padding: 8px;
+                transition: 200ms;
                     &:hover {
+                        padding: 8px;
+                        border-radius: 12px;
+                        background: $font;
                         color: $clear;
                         transition: 200ms;
                     }
@@ -105,9 +111,18 @@ $font: #EEEEEE;
     .dropdown-toggle:after { 
         transition: 0.4s; 
     }
+    
+    .destaque {
+        margin-top: 105px;
+        padding-left: 50px;
+        h2 {
+            font-size: 28px;
+            color: $font;
+        }
+    }
 
     #carouselExampleCaptions {
-        margin-top: 140px;
+        margin-top: 10px;
         border-radius: 17px;
     }
     .carousel-indicators [data-bs-target]{
@@ -115,6 +130,7 @@ $font: #EEEEEE;
             width: 48px;
             margin-inline: 3px;
     }
+    
     .carousel-inner {
         width: 64%;
         margin: 0 auto;
