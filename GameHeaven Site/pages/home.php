@@ -28,19 +28,6 @@ $dadosBanner = json_decode($dadosApi);
     }
     ?>
 
-
-    <div class="carousel-caption d-none d-md-block">
-      <h5>First slide label</h5>
-      <p>Some representative placeholder content for the first slide.</p>
-    </div>
-    <div class="carousel-caption d-none d-md-block">
-      <h5>Second slide label</h5>
-      <p>Some representative placeholder content for the second slide.</p>
-    </div>
-    <div class="carousel-caption d-none d-md-block">
-      <h5>Third slide label</h5>
-      <p>Some representative placeholder content for the third slide.</p>
-    </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -59,7 +46,9 @@ $dadosBanner = json_decode($dadosApi);
 
       <div class="col-12 col-md-4">
         <div class="jogoBanner">
-          <img src="<?= $dados->poster ?>" alt="<?= $dados->nome ?>" class="card-img-top">
+          <a href="game/<?= $dados->id ?>" title="<?= $dados->nome ?>">
+            <img src="<?= $dados->poster ?>" alt="<?= $dados->nome ?>" class="card-img-top">
+          </a>
           <p><strong><?= $dados->nome ?></strong></p>
           <div class="jogoDetalhes">
           <ul>

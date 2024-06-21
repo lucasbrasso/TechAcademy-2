@@ -17,7 +17,6 @@ body {
 }
 
 html, body, canvas {
-	touch-action-delay: none;
 	touch-action: none;
 }
 

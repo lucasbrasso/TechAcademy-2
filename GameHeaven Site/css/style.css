@@ -156,7 +156,19 @@
 .jogoBanner {
   text-align: center;
   color: #EEEEEE;
-  margin: 14px;
+  margin: 8px;
+  padding-bottom: 10px;
+  background: #18181C;
+}
+.jogoBanner img {
+  width: 57%;
+  margin-top: 30px;
+  border-radius: 10px;
+  transition: 400ms;
+}
+.jogoBanner img:hover {
+  scale: 105%;
+  transition: 400ms;
 }
 .jogoBanner p {
   font-size: 30px;
@@ -165,9 +177,9 @@
 .jogoDetalhes ul {
   display: flex;
   flex-direction: row;
-  text-align: center;
   align-items: center;
   justify-content: center;
+  margin-right: 83px;
 }
 .jogoDetalhes li {
   padding: 8px;

@@ -160,7 +160,19 @@ $btn: #059212;
     .jogoBanner {
         text-align: center;
         color: $font;
-        margin: 14px;
+        margin: 8px;
+        padding-bottom: 10px;
+        background: $secondary;
+        img {
+            width: 57%;
+            margin-top: 30px;
+            border-radius: 10px;
+            transition: 400ms;
+            &:hover {
+                scale: 105%;
+                transition: 400ms;
+            }
+        }
         p {
             font-size: 30px;
         }
@@ -170,9 +182,9 @@ $btn: #059212;
         ul {
             display: flex;
             flex-direction: row;
-            text-align: center;
             align-items: center;
             justify-content: center;
+            margin-right: 83px;
         }
         li {
             padding: 8px;
