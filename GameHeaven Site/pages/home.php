@@ -39,6 +39,9 @@ $dadosBanner = json_decode($dadosApi);
   </button>
 </div>
 
+<div class="container biblioteca">
+  <h2>Biblioteca de Jogos</h2>
+</div>
 <div class="row">
   <?php
   foreach ($dadosJogos as $dados) {
@@ -54,7 +57,7 @@ $dadosBanner = json_decode($dadosApi);
           <ul>
 
             <li>
-              <a href="game/<?= $dados->id ?>" title="Jogar Agora"> 
+              <a href="game/<?= $dados->jogo ?>" title="Jogar Agora" target="_blank"> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="15px" viewBox="0 0 384 512"><path fill="#eee" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
                 Jogar
               </a>

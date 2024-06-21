@@ -138,7 +138,7 @@ $btn: #059212;
     }
 
     .carousel-item img {
-        border-radius: 17px;
+        border-radius: 19px;
         border: 2px solid $secondary;
     }
 
@@ -149,18 +149,23 @@ $btn: #059212;
         margin-bottom: 80px;
     }    
 
-    
+    .biblioteca {
+        margin-top: 10px;
+        padding-left: 50px;
+        h2 {
+            font-size: 28px;
+            color: $font;
+        }
+    }
 
     .row {
         margin: 0 auto;
         align-items: center;
-        margin-top: 50px;
     }
     
     .jogoBanner {
         text-align: center;
         color: $font;
-        margin: 8px;
         padding-bottom: 10px;
         background: $secondary;
         img {
@@ -174,7 +179,7 @@ $btn: #059212;
             }
         }
         p {
-            font-size: 30px;
+            font-size: 26px;
         }
     }
 
@@ -202,8 +207,6 @@ $btn: #059212;
             box-shadow: $btn 0 0 10px;
             color: $font;
             transition: 300ms;
-
-
             &:hover {
                 text-shadow: 0px 0px 22px $font;
                 padding: 16px;
@@ -211,8 +214,6 @@ $btn: #059212;
                 background: #06D001;
                 box-shadow: #06D001 0 0 16px;
                 transition: 300ms;
-
-
             }
             svg {
             margin-bottom: 4px;
