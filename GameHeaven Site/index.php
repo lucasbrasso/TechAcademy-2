@@ -73,18 +73,23 @@
 
 <main>
 
-  <?php
-    
-    $pagina = $_GET["pagina"] ?? "home";
+<?php
+            $pagina = "home";
+            if (isset($_GET["pagina"])) {
+                $pagina = $_GET["pagina"] ?? "home";
+                $pagina = explode("/", $pagina);
+                $codigo = $pagina[1] ?? NULL;
+                $pagina = $pagina[0] ?? "home";
+            }
 
-    $pagina = "pages/{$pagina}.php";
+            $pagina = "pages/{$pagina}.php";
 
-    if (file_exists($pagina)) {
-  include $pagina;
-    } else {
-      include "pages/erro.php";
-    }
-  ?>
+            if (file_exists($pagina)) {
+                include $pagina;
+            } else {
+                include "pages/erro.php";
+            }
+        ?>
   
   
 </main>

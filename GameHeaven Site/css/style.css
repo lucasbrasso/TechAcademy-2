@@ -277,6 +277,9 @@ body {
   border-radius: 100%;
   padding: 40px;
 }
+.equipe ul li {
+  list-style: none;
+}
 
 .contato {
   margin-top: 140px;
@@ -304,6 +307,42 @@ body {
   background: #EEEEEE;
   color: #6abcff !important;
   transition: 300ms;
+}
+
+.jogo {
+  margin-top: 120px;
+  color: #EEEEEE;
+}
+.jogo p {
+  width: 65%;
+}
+.jogo img {
+  border-radius: 12px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+.jogo .jogoPlay a {
+  text-shadow: 0px 0px 0px #EEEEEE;
+  text-decoration: none;
+  padding: 13px;
+  font-weight: bold;
+  font-size: 28px;
+  border-radius: 13px;
+  background: #06D001;
+  box-shadow: #06D001 0 0 6px;
+  color: #EEEEEE;
+  transition: 300ms;
+}
+.jogo .jogoPlay a:hover {
+  text-shadow: 0px 0px 22px #EEEEEE;
+  padding: 16px;
+  border-radius: 16px;
+  background: #0fff0a;
+  box-shadow: #0fff0a 0 0 16px;
+  transition: 300ms;
+}
+.jogo .jogoPlay a svg {
+  margin-bottom: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */
