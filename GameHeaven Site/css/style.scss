@@ -281,3 +281,31 @@ $btn: #059212;
             padding: 40px;
         }
     }
+
+    .contato {
+        margin-top: 140px;
+        margin-left: 24%;
+        margin-right: 24%;
+        color: $font;
+        a {
+            float: right;
+            margin-top: 12px;
+            margin-left: 8px;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 12px;
+            color: $font;
+            background: $clear;
+            transition: 300ms;
+            &:hover {
+                padding: 13px;
+                border-radius: 13px;
+                letter-spacing: 0.2px;
+                background: $font;
+                color: $clear !important;
+                transition: 300ms;
+            }
+        }
+    }
