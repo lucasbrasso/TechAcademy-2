@@ -55,7 +55,6 @@ $dadosBanner = json_decode($dadosApi);
           <p><strong><?= $dados->nome ?></strong></p>
           <div class="jogoDetalhes">
           <ul>
-
             <li>
               <a href="game/<?= $dados->jogo ?>" title="Jogar Agora" target="_blank"> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="15px" viewBox="0 0 384 512"><path fill="#eee" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
@@ -63,7 +62,7 @@ $dadosBanner = json_decode($dadosApi);
               </a>
             </li>
             <li>
-              <a href="game/<?= $dados->id ?>" title="Detalhes sobre o jogo">
+              <a href="games/<?= $dados->id ?>" title="Detalhes sobre o jogo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25px" viewBox="0 0 512 512"><path fill="#eee" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
                 Detalhes
               </a>

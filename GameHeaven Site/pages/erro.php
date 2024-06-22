@@ -1,7 +1,7 @@
 <div class="container">
     <div class="erro">
         <p class="text-center">
-            <img src="img/404.svg">
+            <img src="img/404.svg" width="100px">
         </p>
         <p class="text-center">
             <a href="home" title="Página Inicial">

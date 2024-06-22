@@ -62,14 +62,9 @@
 .navbar .nav-item .nav-link {
   color: #EEEEEE;
   text-transform: uppercase;
-  border-radius: 12px;
-  padding: 8px;
   transition: 200ms;
 }
 .navbar .nav-item .nav-link:hover {
-  padding: 8px;
-  border-radius: 12px;
-  background: #EEEEEE;
   color: #6abcff;
   transition: 200ms;
 }
@@ -164,29 +159,34 @@
 .jogoBanner {
   text-align: center;
   color: #EEEEEE;
-  padding-bottom: 10px;
   background: #18181C;
+  margin: 10px;
 }
 .jogoBanner img {
-  width: 57%;
+  width: 55%;
+  padding-bottom: 20px;
   margin-top: 30px;
   border-radius: 10px;
   transition: 400ms;
 }
 .jogoBanner img:hover {
-  scale: 105%;
+  scale: 102%;
   transition: 400ms;
+  box-shadow: #121212 0 0 30px;
 }
 .jogoBanner p {
   font-size: 26px;
 }
 
+.jogoDetalhes {
+  padding: 5px;
+}
 .jogoDetalhes ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-right: 83px;
+  margin-right: 33px;
 }
 .jogoDetalhes li {
   padding: 8px;
@@ -198,10 +198,10 @@
   text-decoration: none;
   padding: 13px;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 13px;
-  background: #059212;
-  box-shadow: #059212 0 0 10px;
+  background: #06D001;
+  box-shadow: #06D001 0 0 6px;
   color: #EEEEEE;
   transition: 300ms;
 }
@@ -209,8 +209,8 @@
   text-shadow: 0px 0px 22px #EEEEEE;
   padding: 16px;
   border-radius: 16px;
-  background: #06D001;
-  box-shadow: #06D001 0 0 16px;
+  background: #0fff0a;
+  box-shadow: #0fff0a 0 0 16px;
   transition: 300ms;
 }
 .jogoDetalhes a svg {
@@ -244,6 +244,38 @@ body {
   background: #EEEEEE;
   color: #6abcff;
   transition: 300ms;
+}
+
+.sobre {
+  text-align: center;
+  margin-top: 140px;
+  color: #EEEEEE;
+}
+.sobre img {
+  width: 45%;
+  padding: 40px;
+}
+.sobre a {
+  color: #6abcff;
+}
+
+.equipe {
+  text-align: center;
+  color: #EEEEEE;
+}
+.equipe h2 {
+  margin-top: 40px;
+}
+.equipe a {
+  color: #6abcff;
+}
+.equipe img[src="img/lucasBrasso.png"] {
+  width: 40%;
+}
+.equipe img {
+  width: 95%;
+  border-radius: 100%;
+  padding: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
