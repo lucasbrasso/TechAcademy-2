@@ -42,16 +42,17 @@ $dadosBanner = json_decode($dadosApi);
 <div class="container biblioteca">
   <h2>Biblioteca de Jogos</h2>
 </div>
-<div class="row">
+<div class="row jogoBanner">
   <?php
   foreach ($dadosJogos as $dados) {
   ?>
+  
       <div class="col-12 col-md-4">
-        <div class="jogoBanner">
           <a href="game/<?= $dados->id ?>" title="<?= $dados->nome ?>">
-            <img src="<?= $dados->poster ?>" alt="<?= $dados->nome ?>" class="card-img-top">
+            <img src="<?= $dados->poster ?>" alt="<?= $dados->nome ?>">
           </a>
           <p><strong><?= $dados->nome ?></strong></p>
+          <strong><?= $dados->tags ?></strong>
           <div class="jogoDetalhes">
           <ul>
             <li>
@@ -68,7 +69,6 @@ $dadosBanner = json_decode($dadosApi);
             </li>
           </ul>  
           </div>
-      </div>
     </div>
     <?php
   }

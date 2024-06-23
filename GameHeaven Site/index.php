@@ -95,6 +95,7 @@
 </main>
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/fslightbox.js"></script>
   <script>
   AOS.init();

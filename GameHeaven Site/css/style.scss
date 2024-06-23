@@ -161,21 +161,22 @@ $btn: #059212;
     .jogoBanner {
         text-align: center;
         color: $font;
-        background: $secondary;
+        background: $primary;
         margin: 10px;
         img {
             width: 55%;
-            padding-bottom: 20px;
+            margin-bottom: 20px;
             margin-top: 30px;
-            border-radius: 10px;
+            border-radius: 13px;
             transition: 400ms;
             &:hover {
                 scale: 102%;
                 transition: 400ms;
-                box-shadow: $primary 0 0 30px;
+                box-shadow: $primary 0 0 20px;
             }
         }
         p {
+            margin: 0;
             font-size: 26px;
         }
     }
@@ -356,3 +357,4 @@ $btn: #059212;
                 }
     }
 }
+
