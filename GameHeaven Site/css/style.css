@@ -220,6 +220,7 @@
 body {
   background: #121212;
   font-family: Ubuntu, Tahoma, Arial;
+  padding-bottom: 40px;
 }
 
 .erro img {
@@ -313,6 +314,9 @@ body {
   margin-top: 120px;
   color: #EEEEEE;
 }
+.jogo h1 {
+  margin-left: 12px;
+}
 .jogo p {
   width: 65%;
 }
@@ -321,28 +325,32 @@ body {
   margin-top: 12px;
   margin-bottom: 40px;
 }
+.jogo img[alt="JogoTexto"] {
+  text-align: center;
+}
 .jogo .jogoPlay a {
   text-shadow: 0px 0px 0px #EEEEEE;
   text-decoration: none;
-  padding: 13px;
+  padding: 18px;
   font-weight: bold;
   font-size: 28px;
-  border-radius: 13px;
+  border-radius: 18px;
   background: #06D001;
   box-shadow: #06D001 0 0 6px;
   color: #EEEEEE;
   transition: 300ms;
 }
 .jogo .jogoPlay a:hover {
-  text-shadow: 0px 0px 22px #EEEEEE;
-  padding: 16px;
-  border-radius: 16px;
+  text-shadow: 0px 0px 2px #EEEEEE;
+  padding: 22px;
+  border-radius: 20px;
   background: #0fff0a;
   box-shadow: #0fff0a 0 0 16px;
   transition: 300ms;
 }
 .jogo .jogoPlay a svg {
   margin-bottom: 4px;
+  margin-right: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */

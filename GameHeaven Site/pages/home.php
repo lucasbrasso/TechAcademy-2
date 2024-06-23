@@ -20,7 +20,7 @@ $dadosBanner = json_decode($dadosApi);
     foreach ($dadosBanner as $dados) {
     ?>
       <div class="carousel-item active">
-        <a href="api/<?= $dados->id_game ?>">
+        <a href="game/<?= $dados->id_game ?>">
           <img src="<?= $dados->imagem ?>" class="d-block w-100" alt="<?= $dados->nome ?>">
         </a>
       </div>

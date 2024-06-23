@@ -222,6 +222,7 @@ $btn: #059212;
     body {
         background: $primary;
         font-family: Ubuntu, Tahoma, Arial;
+        padding-bottom: 40px;
     }
 
     .erro {
@@ -316,6 +317,9 @@ $btn: #059212;
     .jogo {
         margin-top: 120px;
         color: $font;
+        h1 {
+            margin-left: 12px;
+        }
         p {
             width: 65%;
         }
@@ -324,27 +328,31 @@ $btn: #059212;
             margin-top: 12px;
             margin-bottom: 40px;
         }
+        img[alt="JogoTexto"] {
+            text-align: center;
+        }
         .jogoPlay a {
             text-shadow: 0px 0px 0px $font;
             text-decoration: none;
-            padding: 13px;
+            padding: 18px;
             font-weight: bold;
             font-size: 28px;
-            border-radius: 13px;
+            border-radius: 18px;
             background: #06D001;
             box-shadow: #06D001 0 0 6px;
             color: $font;
             transition: 300ms;
             &:hover {
-                text-shadow: 0px 0px 22px $font;
-                padding: 16px;
-                border-radius: 16px;
+                text-shadow: 0px 0px 2px $font;
+                padding: 22px;
+                border-radius: 20px;
                 background: #0fff0a;
                 box-shadow: #0fff0a 0 0 16px;
                 transition: 300ms;
             }
             svg {
                 margin-bottom: 4px;
+                margin-right: 4px;
                 }
     }
 }

@@ -18,7 +18,7 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -95,7 +95,6 @@
 </main>
 
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/fslightbox.js"></script>
   <script>
   AOS.init();
