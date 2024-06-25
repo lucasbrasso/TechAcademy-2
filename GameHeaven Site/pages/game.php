@@ -9,6 +9,7 @@ $dados = $dadosJogos->$codigo;
                 <img src="<?= $dados->poster ?>" alt="<?= $dados->nome ?>" class="w-100">
             </div>
             <div class="col-12 col-md-6">
+                <h3>Detalhes</h3>
                 <p>
                     <?= $dados->descricao ?>
                     <br>
@@ -33,6 +34,7 @@ $dados = $dadosJogos->$codigo;
                 </div>
             </div>
             <div class="row">
+                <h3>Imagens do jogo</h3>
                 <?php
                 $dadosFotos = file_get_contents("http://localhost/TechAcademy-2/GameHeaven%20Site/api/fotos.php");
                 $dadosFotos = json_decode($dadosFotos);
@@ -42,8 +44,8 @@ $dados = $dadosJogos->$codigo;
                 foreach ($dados as $foto) {
                 ?>
                     <div class="col-12 col-md-3">
-                        <a href="<?= $foto->foto ?>" title="Foto <?= $i ?>" data-fslightbox>
-                            <img src="<?= $foto->foto ?>" alt="Foto <?= $i ?>" class="w-100">
+                        <a href="<?= $foto->foto ?>" title="Imagem" data-fslightbox>
+                            <img src="<?= $foto->foto ?>" alt="Imagem" class="w-100">
                         </a>
                     </div>
                 <?php
@@ -56,16 +58,16 @@ $dados = $dadosJogos->$codigo;
         <ul>
             <h4>Ficha Técnica</h4>
             <li>
-                <p>Plataforma: Computador</p>
+                <p><strong>Plataforma:</strong> Computador</p>
             </li>
             <li>
-                <p>Sistema Operacional: Windows e MAC</p>
+                <p><strong>Sistema Operacional:</strong> Windows e MAC</p>
             </li>
             <li>
-                <p>Engine: Construct 3</p>
+                <p><strong>Engine:</strong> Construct 3</p>
             </li>
         </ul>
-        <h5><?= $game->dev ?></h5>
+        <h5 class="text-center"><?= $game->dev ?></h5>
     </div>
 
 </div>

@@ -2,7 +2,7 @@ $primary: #121212;
 $secondary: #18181C;
 $clear: #6abcff;
 $font: #EEEEEE;
-$btn: #059212;
+$btn: #03af00;
 
 * {
     margin: 0;
@@ -202,15 +202,14 @@ $btn: #059212;
             font-weight: bold;
             font-size: 20px;
             border-radius: 13px;
-            background: #06D001;
-            box-shadow: #06D001 0 0 6px;
+            background: $btn;
+            box-shadow: $btn 0 0 6px;
             color: $font;
             transition: 300ms;
             &:hover {
                 text-shadow: 0px 0px 22px $font;
                 padding: 16px;
                 border-radius: 16px;
-                background: #0fff0a;
                 box-shadow: #0fff0a 0 0 16px;
                 transition: 300ms;
             }
@@ -321,6 +320,12 @@ $btn: #059212;
         h1 {
             margin-left: 12px;
         }
+        h3 {
+            margin-top: 10px;
+        }
+        li {
+            margin-left: 18px;
+        }
         p {
             width: 65%;
         }
@@ -333,21 +338,21 @@ $btn: #059212;
             text-align: center;
         }
         .jogoPlay a {
+            margin-bottom: 10px;
             text-shadow: 0px 0px 0px $font;
             text-decoration: none;
             padding: 18px;
             font-weight: bold;
             font-size: 28px;
             border-radius: 18px;
-            background: #06D001;
-            box-shadow: #06D001 0 0 6px;
+            background: $btn;
+            box-shadow: $btn 0 0 6px;
             color: $font;
             transition: 300ms;
             &:hover {
                 text-shadow: 0px 0px 2px $font;
                 padding: 22px;
                 border-radius: 20px;
-                background: #0fff0a;
                 box-shadow: #0fff0a 0 0 16px;
                 transition: 300ms;
             }

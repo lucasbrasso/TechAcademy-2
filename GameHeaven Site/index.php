@@ -37,7 +37,8 @@
       <a href="home">
         <img src="img/gameheaven.svg" width="72px">
       </a>
-      <a class="navbar-brand" href="home">GAME HEAVEN</a>
+      <a class="navbar-brand" href="home">
+      | GAME HEAVEN</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

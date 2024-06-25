@@ -58,7 +58,7 @@
                 <img src="img/lucasBrasso.png" alt="Lucas Brasso Foto">
                 <h3>Lucas Brasso</h3>
                 <h4>18 Anos</h4>
-                <p>Desenvolvedor do site Game Heaven e do jogo Crimson Curse é Mr Universo nas horas vagas. 
+                <p>Desenvolvedor do site Game Heaven e do jogo Crimson Curse é Mr Olympia nas horas vagas. 
                     Minhas inspirações para o site desse módulo foram a 
                     <a href="https://store.epicgames.com/" target="_blank">Epic Games Store</a> e a <a href="https://store.steampowered.com" target="_blank">Steam</a>, 
                     tentei deixar o site o mais prático e intuitivo possível mantendo um design agradável.
@@ -71,9 +71,6 @@
                     <a href="https://storyset.com/web" target="_blank">
                         SVG da Página de Erro
                     </a>
-                    </li>
-                    <li>
-                        <p>O jogo Desordeon foi desenvolvido por </p>
                     </li>
                     <li>
                         <p>Todos os banners foram gerados por IA</p>
